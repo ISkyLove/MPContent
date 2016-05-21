@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MPContent</string>
+
+    <!--main menu-->
+    <string name="main_menu_it_web">网站</string>
+    <string name="main_menu_it_blog">博客</string>
+    <string name="main_menu_it_collect">收藏</string>
+    <string name="main_menu_it_me">我的</string>
 </resources>
