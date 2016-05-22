@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <webs>
     <web>
-      <id>00001</id>
+      <id>100001</id>
       <title>CSDN</title>
       <url>http://www.csdn.net/</url>
       <logo>http://c.csdnimg.cn/public/favicon.ico</logo>
@@ -9,7 +9,7 @@
       <description>全球最大中文IT社区，为IT专业技术人员提供最全面的信息传播和服务平台</description>
     </web>
     <web>
-        <id>00002</id>
+        <id>100002</id>
         <title>51CTO</title>
         <url>http://www.51cto.com/</url>
         <logo>http://images.51cto.com/images/home_2015/images/logo.gif</logo>
@@ -17,7 +17,7 @@
         <description>技术成就梦想 - 中国领先的IT技术网站</description>
     </web>
     <web>
-        <id>00003</id>
+        <id>100003</id>
         <title>IBM developerWorks 中国</title>
         <url>http://www.ibm.com/developerworks/cn/</url>
         <logo>http://1.www.s81c.com/i/v17/t/ibm_logo_print.png</logo>
@@ -25,7 +25,7 @@
         <description>IBM's resource for developers and IT professionals</description>
     </web>
     <web>
-        <id>00004</id>
+        <id>100004</id>
         <title>开发者头条</title>
         <url>http://toutiao.io/</url>
         <logo>http://toutiao.io//android-icon-192x192.png</logo>
@@ -33,7 +33,7 @@
         <description>程序员的首选学习分享平台 | 技术极客的头条新闻</description>
     </web>
     <web>
-        <id>00005</id>
+        <id>100005</id>
         <title>谷歌中国开发者社区 (GDG)</title>
         <url>http://chinagdg.org/</url>
         <logo>http://7xkc0v.com1.z0.glb.clouddn.com/wp-content/uploads/2015/07/GDG-icon-32x321.png</logo>
@@ -41,7 +41,7 @@
         <description>GDG</description>
     </web>
     <web>
-        <id>00006</id>
+        <id>100006</id>
         <title>开发技术前线</title>
         <url>http://www.devtf.cn/</url>
         <logo>http://www.devtf.cn/favicon.ico</logo>

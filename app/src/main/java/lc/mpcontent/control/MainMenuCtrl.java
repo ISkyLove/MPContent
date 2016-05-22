@@ -12,14 +12,14 @@ import lc.mpcontent.control.base.TabViewCtrl;
  * Created by lin on 16-5-21.
  * main menu control
  */
-public class MainMenuCtrl extends TabViewCtrl implements View.OnClickListener{
+public class MainMenuCtrl extends TabViewCtrl implements View.OnClickListener {
 
-    public static final int tab_WEB = 0;
-    public static final int tab_BLOG = 1;
-    public static final int tab_COLLECT = 2;
-    public static final int tab_ME = 3;
+    public static final int TAB_WEB = 0;
+    public static final int TAB_BLOG = 1;
+    public static final int TAB_COLLECT = 2;
+    public static final int TAB_ME = 3;
 
-    private int cur_tab=0;
+    private int cur_tab = 0;
 
     private RelativeLayout rlWeb;
     private RelativeLayout rlBlog;
@@ -30,8 +30,6 @@ public class MainMenuCtrl extends TabViewCtrl implements View.OnClickListener{
     private TextView tvBlog;
     private TextView tvCollect;
     private TextView tvMe;
-
-
 
 
     public MainMenuCtrl(View tabview) {
@@ -63,8 +61,8 @@ public class MainMenuCtrl extends TabViewCtrl implements View.OnClickListener{
 
     @Override
     public void NotifyTabChange(int tab) {
-          initAllTab();
-          setTabSelect(tab);
+        initAllTab();
+        setTabSelect(tab);
     }
 
     @Override
@@ -77,41 +75,42 @@ public class MainMenuCtrl extends TabViewCtrl implements View.OnClickListener{
 
     @Override
     protected void setTabSelect(int tab) {
-        switch (tab){
-            case tab_WEB:
+        switch (tab) {
+            case TAB_WEB:
                 tvWeb.setSelected(true);
-                cur_tab = tab_WEB;
+                cur_tab = TAB_WEB;
                 break;
-            case tab_BLOG:
+            case TAB_BLOG:
                 tvBlog.setSelected(true);
-                cur_tab = tab_BLOG;
+                cur_tab = TAB_BLOG;
                 break;
-            case tab_COLLECT:
+            case TAB_COLLECT:
                 tvCollect.setSelected(true);
-                cur_tab = tab_COLLECT;
+                cur_tab = TAB_COLLECT;
                 break;
-            case tab_ME:
+            case TAB_ME:
                 tvMe.setSelected(true);
-                cur_tab = tab_ME;
+                cur_tab = TAB_ME;
                 break;
         }
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.main_menu_it_web :
-                NotifyTabChange(tab_WEB);
+        switch (v.getId()) {
+            case R.id.main_menu_it_web:
+                cur_tab = TAB_WEB;
                 break;
-            case R.id.main_menu_it_blog :
-                NotifyTabChange(tab_BLOG);
+            case R.id.main_menu_it_blog:
+                cur_tab = TAB_BLOG;
                 break;
-            case R.id.main_menu_it_collect :
-                NotifyTabChange(tab_COLLECT);
+            case R.id.main_menu_it_collect:
+                cur_tab = TAB_COLLECT;
                 break;
-            case R.id.main_menu_it_me :
-                NotifyTabChange(tab_ME);
+            case R.id.main_menu_it_me:
+                cur_tab = TAB_ME;
                 break;
         }
+        NotifyTabChange(cur_tab);
     }
 }
