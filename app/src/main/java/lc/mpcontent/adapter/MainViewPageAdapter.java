@@ -38,6 +38,11 @@ public class MainViewPageAdapter extends FragmentPagerAdapter {
     }
 
     @Override
+    public int getItemPosition(Object object) {
+        return POSITION_NONE;
+    }
+
+    @Override
     public int getCount() {
         if(mFragments!=null){
             return mFragments.size();

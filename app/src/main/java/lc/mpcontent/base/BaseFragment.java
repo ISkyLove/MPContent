@@ -18,10 +18,11 @@ public abstract class BaseFragment extends Fragment {
 
     protected abstract void initEvent();
 
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mRootView = inflater.inflate(getLayoutID(),null);
+        mRootView = inflater.inflate(getLayoutID(), null);
         initView();
         initEvent();
         return mRootView;
@@ -29,7 +30,7 @@ public abstract class BaseFragment extends Fragment {
 
     protected abstract int getLayoutID();
 
-    public View getRootView(){
+    public View getRootView() {
         return mRootView;
     }
 }

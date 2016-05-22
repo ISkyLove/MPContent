@@ -47,7 +47,12 @@ public class WebDomParser implements IDOMParserXML<WebBean> {
 
     @Override
     public List<WebBean> getDataList(InputStream inputStream) {
-        List<WebBean> mList = null;
+
+        List<WebBean>  mList = null;
+
+        if(inputStream==null){
+            return mList;
+        }
         try {
             Document mwebdoc = mBuilder.parse(inputStream);
             Element root = mwebdoc.getDocumentElement();
