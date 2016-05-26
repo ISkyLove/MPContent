@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
 import lc.mpcontent.R;
@@ -17,7 +19,7 @@ import lc.mpcontent.bean.WebBean;
 /**
  * Created by lin on 16-5-22.
  */
-public class WebAdapter extends BaseRVAdapter<WebBean>{
+public class WebAdapter extends BaseRVAdapter<WebBean> {
 
 
     public WebAdapter(Context context, List<WebBean> data) {
@@ -38,10 +40,16 @@ public class WebAdapter extends BaseRVAdapter<WebBean>{
     protected void BindItem(BaseViewHolder holder, WebBean webBean) {
         WebHolderView mWebHV = (WebHolderView) holder;
         mWebHV.title.setText(webBean.getTitle());
+
+        Glide.with(mContext)
+                .load(webBean.getLogo())
+                .placeholder(R.mipmap.ic_launcher)
+                .crossFade()
+                .into(mWebHV.img);
     }
 
 
-    public class WebHolderView extends  BaseViewHolder{
+    public class WebHolderView extends BaseViewHolder {
 
         public ImageView img;
         public TextView title;

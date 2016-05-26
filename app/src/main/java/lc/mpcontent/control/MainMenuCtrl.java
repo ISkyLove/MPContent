@@ -63,6 +63,7 @@ public class MainMenuCtrl extends TabViewCtrl implements View.OnClickListener {
     public void NotifyTabChange(int tab) {
         initAllTab();
         setTabSelect(tab);
+
     }
 
     @Override
@@ -92,6 +93,9 @@ public class MainMenuCtrl extends TabViewCtrl implements View.OnClickListener {
                 tvMe.setSelected(true);
                 cur_tab = TAB_ME;
                 break;
+        }
+        if(mTabChangeListen!=null){
+            mTabChangeListen.OnTabChange(cur_tab);
         }
     }
 

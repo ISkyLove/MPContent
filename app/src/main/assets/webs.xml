@@ -48,4 +48,12 @@
         <ico>http://www.devtf.cn/favicon.ico</ico>
         <description>高质量技术文章的聚合网站</description>
     </web>
+    <web>
+        <id>100007</id>
+        <title>稀土掘金</title>
+        <url>http://gold.xitu.io</url>
+        <logo>http://gold.xitu.io/favicons/favicon-32x32.png</logo>
+        <ico>http://gold.xitu.io/favicons/favicon-32x32.png</ico>
+        <description>掘金是中国质量最高的技术分享社区，邀请稀土用户作为 Co-Editor 来分享优质的技术干货，从前端到后端开发，从设计到产品，让每一个掘金用户都能挖掘到有价值的干货。</description>
+    </web>
 </webs>
